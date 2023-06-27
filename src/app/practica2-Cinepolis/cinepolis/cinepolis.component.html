@@ -1,0 +1,35 @@
+<div class="contenedor">
+  
+  <label>Nombre del comprador</label>
+  <mat-form-field>
+    <input matInput [(ngModel)]="nombre" type="text" placeholder="Nombre">
+  </mat-form-field>
+  
+  <label>Numero de Personas</label>
+  <mat-form-field>
+    <input matInput [(ngModel)]="numPersonas" type="number" placeholder="Numero de personas">
+  </mat-form-field>
+
+  <label>Numero de Boletos</label>
+  <mat-form-field>
+    <input matInput [(ngModel)]="numBoletos" type="number" placeholder="Numero de boletos">
+  </mat-form-field>
+
+  <div class="seleccion">
+    <label for="tarjeta">Tarjeta Cineco:</label>
+    <mat-radio-group name="tarjeta" [(ngModel)]="tarjeta">
+      <mat-radio-button *ngFor="let t of tarjetas" [value]="t">
+        {{t}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <button mat-raised-button color="primary" (click)="calcularCompra();">Calcular</button>
+  <h1>
+    <p>Nombre del comprador: {{nombre}}</p>
+    <p>{{mensaje}}</p>
+    <p>El resultado es: {{resultadoTotal}}</p>
+
+</h1>
+
+</div>

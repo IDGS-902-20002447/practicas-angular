@@ -1,0 +1,66 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .seleccion {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .resultados {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  .tabla {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .tabla th,
+  .tabla td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .tabla th {
+    border: 1px solid black;
+    background-color: white;
+    text-align: left; 
+  }
+  
