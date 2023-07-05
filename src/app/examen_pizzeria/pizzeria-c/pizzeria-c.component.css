@@ -1,0 +1,16 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .col {
+    flex-basis: 45%;
+    margin: 10px;
+  }

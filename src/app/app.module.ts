@@ -8,11 +8,13 @@ import { Practica1resistenciasModule } from './practica1-Resistencia/practica1re
 import { DistanciaModuleModule } from './practica-Distancia/distancia-module/distancia-module.module';
 import { CinepolisMModule } from './practica2-Cinepolis/cinepolis-m/cinepolis-m.module';
 import { MenuComponent } from './menu/menu.component';
+import { PizzeriaMModule } from './examen_pizzeria/pizzeria-m/pizzeria-m.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    
         ],
   imports: [
     BrowserModule,
@@ -20,7 +22,8 @@ import { MenuComponent } from './menu/menu.component';
     BrowserAnimationsModule,
     Practica1resistenciasModule,
     DistanciaModuleModule,
-    CinepolisMModule
+    CinepolisMModule,
+    PizzeriaMModule
     ],
 
   providers: [],
